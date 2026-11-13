@@ -2,6 +2,7 @@ const { getBroadcastStats } = require("@utils/functions/joinAndPlayQuran");
 const { EmbedBuilder, ButtonInteraction, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { t } = require("@utils/functions/i18n");
 const { isOwner, isMod } = require("@utils/functions/access");
+const { probeAudioServer } = require("@utils/functions/radioGuards");
 
 /**
  * @type {import("@utils/types/baseComponent")}
@@ -46,6 +47,11 @@ module.exports = {
       }
 
       const activeBroadcasts = getBroadcastStats(client);
+      // Live probe: the shard's cached flag is null (unknown) until something probes.
+      if (activeBroadcasts.audioServer?.configured) {
+        try { await probeAudioServer(client); } catch (_) {}
+        Object.assign(activeBroadcasts.audioServer, getBroadcastStats(client).audioServer || {});
+      }
       const audioServerLine = activeBroadcasts.audioServer?.configured
         ? (activeBroadcasts.audioServer.reachable ? "✅ reachable" : "❌ unreachable")
         : "n/a (embedded)";
