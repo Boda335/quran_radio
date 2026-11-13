@@ -1,0 +1,10 @@
+node_modules
+.env
+.git
+logs
+database/*.sqlite
+database/*.sqlite-wal
+database/*.sqlite-shm
+database/database.json
+database/liveStatus.json
+*.zip

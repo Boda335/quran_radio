@@ -43,14 +43,31 @@ let client = new Quran({
   }
 });
 
-setTimeout(function () {
+// Connect the database BEFORE logging in. Messages/interactions can arrive the
+// moment the gateway is up, and any client.db.get() before the Mongo driver is
+// connected throws "Database not initialized".
+setTimeout(async function () {
+  try {
+    await client.DBConnect();
+  } catch (err) {
+    console.error("Database connection failed, exiting:".red, err.message);
+    process.exit(1);
+  }
   client.botlogin(process.env.token);
 }, 2000);
 
 client.on("shardError", (error) => console.log("shardError".red, error));
 client.on("shardDisconnect", (event) => console.log("shardDisconnect".yellow, event));
 client.on("shardReconnecting", (event) => console.log("shardReconnecting".bgGreen, event));
-client.on("debug", (message) => !message.startsWith("[VOICE] received voice state update") && !message.startsWith("[VOICE] received voice server") && console.log("debug".green, message));
+const IGNORED_DEBUG = [
+  "[VOICE] received voice state update",
+  "[VOICE] received voice server",
+  "Failed to find guild, or unknown type for channel", // unsupported channel type (e.g. 20) - harmless
+];
+client.on("debug", (message) => {
+  if (IGNORED_DEBUG.some((s) => message.includes(s))) return;
+  console.log("debug".green, message);
+});
 module.exports = client;
 
 //nodejs-events

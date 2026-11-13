@@ -139,7 +139,22 @@ class baseClient extends Client {
   };
 
 
-  async DBConnect(retries = 8, baseDelay = 3000) {
+  /**
+   * Idempotent: every caller gets the same in-flight/finished connection.
+   * Without this, a second call while the first is still connecting makes the
+   * Mongo driver connect and createCollection twice.
+   */
+  DBConnect(retries = 8, baseDelay = 3000) {
+    if (!this._dbConnecting) {
+      this._dbConnecting = this._DBConnect(retries, baseDelay).catch((err) => {
+        this._dbConnecting = null; // allow a later retry after a hard failure
+        throw err;
+      });
+    }
+    return this._dbConnecting;
+  }
+
+  async _DBConnect(retries = 8, baseDelay = 3000) {
     const supportedDbTypes = ["MONGODB", "MySQL"];
     if (!this.db || !supportedDbTypes.includes(this.#db_option?.database_type)) {
       return this.logger.log(`DB Type ${this.#db_option?.database_type}`);
@@ -301,4 +316,3 @@ class baseClient extends Client {
 };
 
 module.exports = baseClient
-

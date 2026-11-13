@@ -1,0 +1,215 @@
+{
+  "totalServers": 3078,
+  "totalUsers": 733723,
+  "activeRadio": 110,
+  "idleRadio": 104,
+  "activeAzkar": 48,
+  "activeAdhan": 59,
+  "totalShards": 3,
+  "activeBroadcasts": 20,
+  "totalListeners": 7,
+  "broadcasts": [
+    {
+      "id": "cda58e6aabf7",
+      "name": "إذاعة القران الكريم دولة مصر",
+      "url": "http://stream.radiojar.com/8s5u5tpdtwzuv",
+      "listeners": 5,
+      "guilds": 47,
+      "idle": 43
+    },
+    {
+      "id": "f43d9bc0be41",
+      "name": "إذاعة ياسر الدوسري",
+      "url": "https://qurango.net/radio/yasser_aldosari",
+      "listeners": 2,
+      "guilds": 19,
+      "idle": 18
+    },
+    {
+      "id": "4a90382a10fc",
+      "name": "إذاعة آيات السكينة",
+      "url": "https://backup.qurango.net/radio/sakeenah",
+      "listeners": 0,
+      "guilds": 3,
+      "idle": 3
+    },
+    {
+      "id": "62e41885f01d",
+      "name": "أذكار الصباح",
+      "url": "https://qurango.net/radio/athkar_sabah",
+      "listeners": 0,
+      "guilds": 3,
+      "idle": 3
+    },
+    {
+      "id": "ad0be1a46324",
+      "name": "إذاعة القران الكريم دولة السعودية",
+      "url": "http://n0e.radiojar.com/4wqre23fytzuv",
+      "listeners": 0,
+      "guilds": 6,
+      "idle": 6
+    },
+    {
+      "id": "719e9ad72210",
+      "name": "إذاعة محمد صديق المنشاوي المصحف المجود",
+      "url": "https://backup.qurango.net/radio/mohammed_siddiq_alminshawi_mojawwad",
+      "listeners": 0,
+      "guilds": 3,
+      "idle": 3
+    },
+    {
+      "id": "b461e32cb346",
+      "name": " إذاعة محمد صديق المنشاوي",
+      "url": "https://backup.qurango.net/radio/mohammed_siddiq_alminshawi",
+      "listeners": 0,
+      "guilds": 4,
+      "idle": 3
+    },
+    {
+      "id": "9448d4435585",
+      "name": "إذاعة محمود علي البنا المصحف المجود",
+      "url": "https://qurango.net/radio/mahmoud_ali__albanna_mojawwad",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "27ef65b98079",
+      "name": "إذاعة ماهر المعيقلي",
+      "url": "https://qurango.net/radio/maher_al_meaqli",
+      "listeners": 0,
+      "guilds": 8,
+      "idle": 8
+    },
+    {
+      "id": "f5d1192d6486",
+      "name": "السيرة النبوية - 400 حلقة عن سيرة نبينا محمد",
+      "url": "https://qurango.net/radio/fi_zilal_alsiyra",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "b259aaff6000",
+      "name": "https://server3.quraan.us:8014/;*.mp3",
+      "url": "https://server3.quraan.us:8014/;*.mp3",
+      "listeners": 0,
+      "guilds": 2,
+      "idle": 2
+    },
+    {
+      "id": "b41dc7cb53ae",
+      "name": "إذاعة سعد الغامدي",
+      "url": "https://qurango.net/radio/saad_alghamdi",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "20e3636f85ac",
+      "name": " إذاعة مشاري العفاسي",
+      "url": "https://qurango.net/radio/mishary_alafasi",
+      "listeners": 0,
+      "guilds": 2,
+      "idle": 2
+    },
+    {
+      "id": "61946d50fbf3",
+      "name": "إذاعة عبدالباسط عبدالصمد المصحف المجود",
+      "url": "https://qurango.net/radio/abdulbasit_abdulsamad_mojawwad",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "8cd94f2d4a81",
+      "name": "إذاعة تلاوات خاشعة",
+      "url": "https://qurango.net/radio/salma",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "56a0f7a1b777",
+      "name": "اذاعة قناة الحرم المكي",
+      "url": "https://r7.tarat.com:8004/;stream.mp3",
+      "listeners": 0,
+      "guilds": 2,
+      "idle": 2
+    },
+    {
+      "id": "90c046ac2780",
+      "name": "إذاعة محمود علي البنا",
+      "url": "https://qurango.net/radio/mahmoud_ali__albanna",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "087d48ae9f57",
+      "name": "إذاعة عبدالله الخلف",
+      "url": "https://qurango.net/radio/abdullah_alkhalaf",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "209da26918fd",
+      "name": "اذاعة ابتهالات الشيخ نصر الدين طوبار",
+      "url": "https://stream.zeno.fm/e15ed2m0pnhvv",
+      "listeners": 0,
+      "guilds": 1,
+      "idle": 1
+    },
+    {
+      "id": "8f196c1ac0b6",
+      "name": "إذاعة عبدالباسط عبدالصمد",
+      "url": "https://qurango.net/radio/abdulbasit_abdulsamad_warsh",
+      "listeners": 0,
+      "guilds": 3,
+      "idle": 3
+    }
+  ],
+  "audioMode": "remote",
+  "audioActiveBroadcasts": 0,
+  "audioTotalListeners": 0,
+  "audioServer": {
+    "configured": true,
+    "reachable": false,
+    "consecutiveFailures": 15,
+    "lastCheckAt": null
+  },
+  "shards": [
+    {
+      "id": 0,
+      "guilds": 1059,
+      "users": 212414,
+      "ping": 181,
+      "uptime": 231,
+      "radio": 61,
+      "azkar": 11,
+      "adhan": 24
+    },
+    {
+      "id": 1,
+      "guilds": 1057,
+      "users": 295746,
+      "ping": 161,
+      "uptime": 181,
+      "radio": 30,
+      "azkar": 25,
+      "adhan": 24
+    },
+    {
+      "id": 2,
+      "guilds": 962,
+      "users": 225563,
+      "ping": 160,
+      "uptime": 157,
+      "radio": 19,
+      "azkar": 12,
+      "adhan": 11
+    }
+  ],
+  "updatedAt": 1794587627665
+}
